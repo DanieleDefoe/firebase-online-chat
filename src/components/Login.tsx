@@ -9,9 +9,7 @@ const Login = () => {
 
   const login = async () => {
     const provider = new GoogleAuthProvider();
-    const { user } = await signInWithPopup(auth, provider);
-
-    console.log(user);
+    await signInWithPopup(auth, provider);
   };
 
   return (
